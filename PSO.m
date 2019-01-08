@@ -47,5 +47,5 @@ for i=1:ITER
     [~, BEST] = opt_func(X_best.fitness);
     Bl = Bl * Bl_damp;  %изменяем инерцию частиц
 end
-F = X_best.fitness(BEST); P = X_best.pos(BEST);
+F = X_best.fitness(BEST); P = X_best.pos(BEST,:);
 end
